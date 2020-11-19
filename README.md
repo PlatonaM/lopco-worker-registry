@@ -1,3 +1,40 @@
+### Worker Data Structure
+
+    {
+        "name": <string>,
+        "image": <string>,
+        "data_cache_path": <string>,
+        "description": <string>,
+        "configs": {
+            <string>: <string>,
+            ...
+        },
+        "input": {
+            "type": <string>("single" / "multiple"),
+            "fields": [
+                {
+                    "name": <string>,
+                    "media_type": <string>,
+                    "is_file": <boolean>
+                },
+                ...
+            ]
+        },
+        "output": {
+            "type": <string>("single" / "multiple"),
+            "fields": [
+                {
+                    "name": <string>,
+                    "media_type": <string>,
+                    "is_file": <boolean>
+                },
+                ...
+            ]
+        }
+    }
+
+### API
+
 #### /workers
 
 **GET**
